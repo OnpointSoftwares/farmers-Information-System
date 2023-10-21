@@ -72,13 +72,16 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $email=$_SESSION['login'];
-$sql = "SELECT fdate FROM finfo where femail='$email'";
+$sql = "SELECT * FROM finfo where femail='$email'";
 $result = $conn->query($sql);
 $row=mysqli_fetch_assoc($result);
 
 if ($result->num_rows > 0) {
   // output data of each row
   $startdate = strtotime($row['fdate']);
+  $plant=$row['fcrop'];
+  if($plant=="maize")
+  {
  ?>
     <tr><td>Spray Booster Foliar Fertilizer</td><td><?php $startdates = strtotime("+2 week", $startdate);
   echo date("M d", $startdates) . "<br>";?></td></tr>
@@ -89,6 +92,20 @@ if ($result->num_rows > 0) {
     <tr><td>Spray with Fluaziam against Late Blight</td><td><?php $startdates = strtotime("+8 week", $startdate);
   echo date("M d", $startdates) . "<br>";?></td></tr>
     <?php
+  }
+  else if($plant=="wheat")
+  {
+    ?>
+    <tr><td>Spray Booster Foliar Fertilizer</td><td><?php $startdates = strtotime("+2 week", $startdate);
+  echo date("M d", $startdates) . "<br>";?></td></tr>
+    <tr><td>Inter-Row Weeding</td><td><?php $startdates = strtotime("+4 week", $startdate);
+  echo date("M d", $startdates) . "<br>";?></td></tr>
+    <tr><td>Top Dress with Yara Mila Winner Fertilizer</td><td><?php $startdates = strtotime("+6 week", $startdate);
+  echo date("M d", $startdates) . "<br>";?></td></tr>
+    <tr><td>Spray with Fluaziam against Late Blight</td><td><?php $startdates = strtotime("+8 week", $startdate);
+  echo date("M d", $startdates) . "<br>";?></td></tr>
+    <?php
+  }
 } else {
   echo "0 results";
   header("location:../fdetails.html");

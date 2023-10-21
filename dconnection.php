@@ -7,6 +7,7 @@
         $fnumber = $_POST['fnumber'];
         $fgender = $_POST['fgender'];
         $fdate=$_POST['fdate'];
+        $fcrop=$_POST['fcrop'];
     // database details
     $host = "localhost";
     $username = "root";
@@ -23,7 +24,7 @@
     }
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO finfo (fname, femail, fnumber, fgender,fdate) VALUES ('$fname', '$femail', '$fnumber', '$fgender','$fdate')";
+    $sql = "INSERT INTO finfo (fname, femail, fnumber,fcrop, fgender,fdate) VALUES ('$fname', '$femail', '$fnumber','$fcrop', '$fgender','$fdate')";
   
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($con, $sql);
