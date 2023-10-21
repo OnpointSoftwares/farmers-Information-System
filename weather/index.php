@@ -261,6 +261,36 @@ if(isset($_POST['view']))
 <h6>Wind: __ M/S</h6>
 <h6>Humidity: __%</h6>
 </li>
+  <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
+        <li class="card">
+          <h3>( ______ )</h3>
+          <h6>Temp: __C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </li>
       </ul>
       <?php
     }
