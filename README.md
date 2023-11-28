@@ -23,11 +23,6 @@ The Farmers Information System is a web-based application designed to assist far
 - **Event Display:** View a series of upcoming farming events.
 - **SMS Notifications:** Send SMS notifications to farmers about upcoming events.
 
-## Screenshots
-
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
-![Screenshot 3](images/screenshot3.png)
 
 ## Getting Started
 
@@ -100,7 +95,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Thanks to [Name] for inspiration and guidance.
+- Thanks to Kabarak University Google Developer Student Club(GDSC) for inspiration and guidance.
 - SMS functionality powered by [Africa's Talking](https://www.africastalking.com/).
 
 ## Contact
