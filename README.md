@@ -3,8 +3,6 @@ Great! If you've used PHP for the backend, HTML/CSS for the frontend, and Node.j
 ```markdown
 # Farmers Information System
 
-![App Logo](images/farmers_info_system_logo.png)
-
 ## Overview
 
 The Farmers Information System is a web-based application designed to assist farmers in managing and tracking their farming activities. The system allows farmers to register, enter crop details, and generates a series of events such as planting, weeding, spraying, and others. Additionally, the system can send SMS notifications using the Africa's Talking gateway to keep farmers informed about upcoming events.
